@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Media House | Digital Skills & Online Earning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B35',
+                        secondary: '#004E89',
+                        accent: '#F7C548',
+                        dark: '#1A1A2E',
+                        light: '#F5F5F5'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 px-4 py-3">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                    <span class="text-2xl font-bold text-white">VM</span>
+                </div>
+                <span class="text-xl font-bold gradient-text hidden sm:block">Vikas Media House</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-primary transition-colors">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-primary transition-colors">Skills</a>
+                <a href="#services" class="text-gray-300 hover:text-primary transition-colors">Services</a>
+                <a href="#work" class="text-gray-300 hover:text-primary transition-colors">Work</a>
+                <a href="#contact" class="btn-primary px-6 py-2 rounded-full text-white font-semibold">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-80 h-full bg-dark z-50 p-8">
+        <button id="closeMenu" class="absolute top-6 right-6 text-white text-2xl">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="flex flex-col space-y-6 mt-16">
+            <a href="#home" class="text-xl text-gray-300 hover:text-primary transition-colors">Home</a>
+            <a href="#about" class="text-xl text-gray-300 hover:text-primary transition-colors">About</a>
+            <a href="#skills" class="text-xl text-gray-300 hover:text-primary transition-colors">Skills</a>
+            <a href="#services" class="text-xl text-gray-300 hover:text-primary transition-colors">Services</a>
+            <a href="#work" class="text-xl text-gray-300 hover:text-primary transition-colors">Work</a>
+            <a href="#contact" class="text-xl text-gray-300 hover:text-primary transition-colors">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center relative pt-20">
+        <div class="particles">
+            <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+            <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
+            <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
+            <div class="particle" style="left: 50%; animation-delay: 1s;"></div>
+            <div class="particle" style="left: 70%; animation-delay: 3s;"></div>
+            <div class="particle" style="left: 90%; animation-delay: 5s;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="text-center md:text-left">
+                <div class="inline-block px-4 py-2 bg-primary/20 rounded-full mb-6">
+                    <span class="text-primary font-medium">🙏 Namaste! Welcome to</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    <span class="gradient-text">Vikas Media</span>
+                    <br>
+                    <span class="text-white">House</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-4">
+                    Mera naam <span class="text-primary font-semibold">Vikas Kumar Giri</span> hai
+                </p>
+                <p class="text-gray-400 mb-8 max-w-lg">
+                    Main ek content creator aur digital skills learner hoon. Main YouTube videos, video editing aur online earning skills par kaam karta hoon.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#services" class="btn-primary px-8 py-4 rounded-full text-white font-semibold text-lg">
+                        <i class="fas fa-rocket mr-2"></i>Explore Services
+                    </a>
+                    <a href="#contact" class="px-8 py-4 rounded-full border-2 border-primary text-primary font-semibold text-lg hover:bg-primary hover:text-white transition-all">
+                        <i class="fas fa-phone mr-2"></i>Contact Me
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex justify-center md:justify-start gap-4 mt-8">
+                    <a href="https://www.youtube.com/@VikashKumargiri-t2e" target="_blank" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/918298829389" target="_blank" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="mailto:vkumargiri29@gmail.com" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image/Illustration -->
+            <div class="relative hidden md:block">
+                <div class="float">
+                    <div class="w-80 h-80 mx-auto bg-gradient-to-br from-primary to-accent rounded-full opacity-20 blur-3xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+                </div>
+                <div class="relative z-10">
+                    <div class="w-96 h-96 mx-auto bg-gradient-to-br from-dark to-secondary rounded-3xl glow overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-video text-8xl text-primary mb-4"></i>
+                                <p class="text-2xl font-bold gradient-text">Creating Content</p>
+                                <p class="text-gray-400">That Matters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-primary">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-accent">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="reveal">
+                    <div class="stat-number text-white">50+</div>
+                    <p class="text-white/80 text-lg">Videos Created</p>
+                </div>
+                <div class="reveal">
+                    <div class="stat-number text-white">20+</div>
+                    <p class="text-white/80 text-lg">Happy Clients</p>
+                </div>
+                <div class="reveal">
+                    <div class="stat-number text-white">100+</div>
+                    <p class="text-white/80 text-lg">Hours Edited</p>
+                </div>
+                <div class="reveal">
+                    <div class="stat-number text-white">5+</div>
+                    <p class="text-white/80 text-lg">Skills Learned</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="text-primary font-semibold text-lg">Get To Know</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2">About <span class="gradient-text">Me</span></h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <div class="relative">
+                        <div class="w-full h-96 bg-gradient-to-br from-primary/30 to-accent/30 rounded-3xl p-1">
+                            <div class="w-full h-full bg-gradient-to-br from-secondary to-dark rounded-3xl flex items-center justify-center overflow-hidden">
+                                <div class="text-center p-8">
+                                    <div class="w-32 h-32 mx-auto bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mb-6">
+                                        <span class="text-6xl">👨‍💻</span>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-white mb-2">Vikas Kumar Giri</h3>
+                                    <p class="text-primary">Content Creator & Digital Learner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-2xl flex items-center justify-center glow">
+                            <div class="text-center">
+                                <p class="text-3xl font-bold text-white">2+</p>
+                                <p class="text-white text-sm">Years Exp.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <h3 class="text-3xl font-bold text-white mb-6">
+                        Main ek <span class="text-primary">passionate learner</span> hoon
+                    </h3>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        👋 Main ek passionate learner hoon jo online skills jaise Data Analysis, Video Editing aur AI tools seekh raha hoon. Mera goal hai ki main apne skills se paisa kamaun aur dusron ko bhi sikhaun.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        🎯 Main logon ko online earning aur digital skills sikhlata hoon. Chahe aap beginner ho ya advance level, main aapki har step par madad karunga.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-600/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <span class="text-white">Video Editing</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-600/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <span class="text-white">YouTube Growth</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-600/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <span class="text-white">Data Analysis</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-600/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-check text-green-500"></i>
+                            </div>
+                            <span class="text-white">AI Tools</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-gradient-to-b from-dark to-light/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="text-primary font-semibold text-lg">What I Know</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2">My <span class="gradient-text">Skills</span></h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Skill Cards Left -->
+                <div class="space-y-8 reveal">
+                    <div class="bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-red-700 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-video text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">Video Editing</h4>
+                                    <p class="text-gray-500">Premiere Pro, CapCut</p>
+                                </div>
+                            </div>
+                            <span class="text-3xl font-bold text-primary">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl flex items-center justify-center">
+                                    <i class="fab fa-youtube text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">YouTube Growth</h4>
+                                    <p class="text-gray-500">SEO, Thumbnails, Tags</p>
+                                </div>
+                            </div>
+                            <span class="text-3xl font-bold text-primary">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Cards Right -->
+                <div class="space-y-8 reveal">
+                    <div class="bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-chart-bar text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">Excel & Data Analysis</h4>
+                                    <p class="text-gray-500">Sheets, Pivot Tables</p>
+                                </div>
+                            </div>
+                            <span class="text-3xl font-bold text-primary">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-robot text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white">AI Tools Use</h4>
+                                    <p class="text-gray-500">ChatGPT, Midjourney</p>
+                                </div>
+                            </div>
+                            <span class="text-3xl font-bold text-primary">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="text-primary font-semibold text-lg">What I Offer</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2">My <span class="gradient-text">Services</span></h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-card p-8 rounded-3xl text-center reveal">
+                    <div class="icon-wrapper w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-film text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">YouTube Video Editing</h3>
+                    <p class="text-gray-400 mb-6">Professional video editing for your YouTube content with trending effects and music.</p>
+                    <a href="#contact" class="text-primary font-semibold hover:text-accent transition-colors">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="service-card p-8 rounded-3xl text-center reveal">
+                    <div class="icon-wrapper w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-image text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Thumbnail Design</h3>
+                    <p class="text-gray-400 mb-6">Eye-catching thumbnails that increase your click-through rate and views.</p>
+                    <a href="#contact" class="text-primary font-semibold hover:text-accent transition-colors">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="service-card p-8 rounded-3xl text-center reveal">
+                    <div class="icon-wrapper w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Channel Growth Tips</h3>
+                    <p class="text-gray-400 mb-6">Learn proven strategies to grow your YouTube channel organically.</p>
+                    <a href="#contact" class="text-primary font-semibold hover:text-accent transition-colors">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="service-card p-8 rounded-3xl text-center reveal">
+                    <div class="icon-wrapper w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-code text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Basic Website Banana</h3>
+                    <p class="text-gray-400 mb-6">Simple and beautiful websites for your personal brand or business.</p>
+                    <a href="#contact" class="text-primary font-semibold hover:text-accent transition-colors">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work/Portfolio Section -->
+    <section id="work" class="py-24 bg-gradient-to-b from-dark to-light/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="text-primary font-semibold text-lg">My Portfolio</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2">Recent <span class="gradient-text">Work</span></h2>
+            </div>
+
+            <!-- Featured Video -->
+            <div class="max-w-4xl mx-auto mb-16 reveal">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-white mb-2">Featured YouTube Video</h3>
+                    <p class="text-gray-400">Check out my latest content!</p>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/vtIG3imiMgA" title="Vikas Media House Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Work Categories -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-red-600/20 to-red-900/20 p-8 rounded-3xl border border-red-600/30 reveal">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center">
+                            <i class="fab fa-youtube text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">YouTube Videos</h4>
+                            <p class="text-gray-400">Long-form content</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Creative and engaging YouTube videos on digital skills, online earning tips, and technology tutorials.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-600/20 to-purple-900/20 p-8 rounded-3xl border border-purple-600/30 reveal">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Shorts / Reels</h4>
+                            <p class="text-gray-400">Viral short content</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Trending short videos for Instagram, YouTube Shorts, and TikTok to boost engagement.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-600/20 to-blue-900/20 p-8 rounded-3xl border border-blue-600/30 reveal">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-cut text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Editing Projects</h4>
+                            <p class="text-gray-400">Client work samples</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Professional editing work for various clients including vlogs, tutorials, and promotional content.</p>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-16 reveal">
+                <a href="https://www.youtube.com/@VikashKumargiri-t2e" target="_blank" class="btn-primary inline-flex items-center px-8 py-4 rounded-full text-white font-semibold text-lg">
+                    <i class="fab fa-youtube mr-3"></i>Subscribe on YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="text-primary font-semibold text-lg">Get In Touch</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2">Contact <span class="gradient-text">Me</span></h2>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Mujhse contact karein agar aapko meri services chahiye ya kuch sawal hai. Main aapki madad ke liye hamesha ready hoon!</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <a href="https://wa.me/918298829389" target="_blank" class="contact-card bg-gradient-to-br from-green-600 to-green-700 p-8 rounded-3xl text-center reveal">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-whatsapp text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">WhatsApp</h3>
+                    <p class="text-white/80 text-lg">+91 8298829389</p>
+                    <p class="text-white/60 mt-4">Quick Response</p>
+                </a>
+
+                <a href="mailto:vkumargiri29@gmail.com" class="contact-card bg-gradient-to-br from-blue-600 to-blue-700 p-8 rounded-3xl text-center reveal">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-envelope text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Email</h3>
+                    <p class="text-white/80 text-sm">vkumargiri29@gmail.com</p>
+                    <p class="text-white/60 mt-4">24/7 Available</p>
+                </a>
+
+                <a href="https://www.youtube.com/@VikashKumargiri-t2e" target="_blank" class="contact-card bg-gradient-to-br from-red-600 to-red-700 p-8 rounded-3xl text-center reveal">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-youtube text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">YouTube</h3>
+                    <p class="text-white/80 text-sm">@VikashKumargiri-t2e</p>
+                    <p class="text-white/60 mt-4">Subscribe & Learn</p>
+                </a>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="max-w-2xl mx-auto mt-16 reveal">
+                <form class="bg-gray-900/50 p-8 rounded-3xl border border-gray-800" id="contactForm">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-400 mb-2">Your Name</label>
+                            <input type="text" class="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-xl text-white focus:border-primary focus:outline-none transition-colors" placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 mb-2">WhatsApp Number</label>
+                            <input type="tel" class="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-xl text-white focus:border-primary focus:outline-none transition-colors" placeholder="+91 XXXXXXXXX" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-400 mb-2">Service Required</label>
+                        <select class="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-xl text-white focus:border-primary focus:outline-none transition-colors" required>
+                            <option value="">Select a service</option>
+                            <option value="video-editing">YouTube Video Editing</option>
+                            <option value="thumbnail">Thumbnail Design</option>
+                            <option value="growth">Channel Growth Tips</option>
+                            <option value="website">Basic Website</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-400 mb-2">Your Message</label>
+                        <textarea class="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-xl text-white focus:border-primary focus:outline-none transition-colors h-32 resize-none" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary py-4 rounded-xl text-white font-semibold text-lg">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="py-8 bg-gradient-to-r from-primary to-accent overflow-hidden">
+        <div class="marquee">
+            <div class="marquee-content text-2xl font-bold text-white whitespace-nowrap">
+                🎬 Video Editing • 📊 YouTube Growth • 🎨 Thumbnail Design • 🌐 Website Development • 🤖 AI Tools • 💰 Online Earning • 🎬 Video Editing • 📊 YouTube Growth • 🎨 Thumbnail Design • 🌐 Website Development • 🤖 AI Tools • 💰 Online Earning •
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
+                            <span class="text-2xl font-bold text-white">VM</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Vikas Media House</h3>
+                            <p class="text-gray-500">Digital Skills & Online Earning</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Main logon ko online earning aur digital skills sikhlata hoon. Digital duniya mein apna career banana hai? Main aapki madad kar sakta hoon!
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@VikashKumargiri-t2e" target="_blank" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/918298829389" target="_blank" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="mailto:vkumargiri29@gmail.com" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">
+                            <i class="fab fa-telegram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">About Me</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-primary transition-colors">Skills</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="#work" class="text-gray-400 hover:text-primary transition-colors">Portfolio</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">Video Editing</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">Thumbnail Design</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">Channel Growth</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">Website Development</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">AI Tools Training</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-center md:text-left">
+                    © 2026 Vikas Media House | All Rights Reserved
+                </p>
+                <p class="text-gray-500 mt-4 md:mt-0">
+                    Made with ❤️ by Vikas Kumar Giri
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white text-2xl shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-110 z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
